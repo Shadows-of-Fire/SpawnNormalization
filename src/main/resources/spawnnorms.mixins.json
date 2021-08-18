@@ -1,0 +1,10 @@
+{
+	"required": true,
+	"package": "shadows.spawnnorms.mixin",
+	"compatibilityLevel": "JAVA_8",
+	"refmap": "spawnnorms.refmap.json",
+	"mixins": [
+		"MixinWorldEntitySpawner"
+	],
+	"minVersion": "0.8"
+}
