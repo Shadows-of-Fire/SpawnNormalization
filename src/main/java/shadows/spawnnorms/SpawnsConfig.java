@@ -33,7 +33,7 @@ public class SpawnsConfig {
 	public SpawnsConfig(ForgeConfigSpec.Builder build) {
 		build.comment("Server configuration");
 		build.push("server");
-		algorithm = build.comment("The currently active spawn algorithm.", "Valid types are VANILLA, HIGH_SURFACE_PREF, SKYBLOCK, TWO_LAYER.", "See curseforge for implementation details.").define("spawn algorithm", "VANILLA", ALGO_VALIDATOR);
+		algorithm = build.comment("The currently active spawn algorithm.", "Valid types are VANILLA, SURFACE_PREF, SKYBLOCK, TWO_LAYER, SURFACE_ONLY.", "See curseforge for implementation details.").define("spawn algorithm", "VANILLA", ALGO_VALIDATOR);
 		inverse = build.comment("If the spawn algorithm is inverted (y = max height - y)").define("inverted", false);
 		build.pop();
 	}
